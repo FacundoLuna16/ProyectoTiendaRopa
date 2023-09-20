@@ -1,13 +1,16 @@
-package Ropa;
+package com.tiendaRopa.Ropa;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class CategoriaRopa {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String tipo;
-
-    public CategoriaRopa(id, tipo) {
-        this.id = id;
-        this.tipo = tipo;
-    }
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
@@ -24,5 +27,4 @@ public class CategoriaRopa {
     public int getId() {
         return id;
     }
-}
 }
