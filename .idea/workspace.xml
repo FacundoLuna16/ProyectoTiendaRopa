@@ -5,18 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae227496-d5ae-4b5a-aa75-21d80fedb701" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Model/CategoriaProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Model/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Model/Temporada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Service/DomainProductoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Service/ProductoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/CategoriaProductoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/ProductoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/TemporadaRepsitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaCategoriaProductoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaProductoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaTemporada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/repository/JpaProductoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructura/RopaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructura/RopaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/CategoriaRopa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/CategoriaRopa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/Ropa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/Ropa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/Temporada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/Temporada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructura/RopaDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/CategoriaRopa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/entity/CategoriaProductoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/Ropa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/entity/ProductoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/Temporada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/entity/TemporadaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,29 +54,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/fakku/Downloads/apunte-10-ejercicios-solucion&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/fakku/Desktop/ProyTiendaRopa/TiendaRopa/TiendaRopa/src/main/java/com/tiendaRopa/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/fakku/Desktop/ProyTiendaRopa/TiendaRopa/TiendaRopa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/fakku/Desktop/ProyTiendaRopa/TiendaRopa/TiendaRopa/src/main/java/com/tiendaRopa/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tiendaRopa.Infraestructure.Dao" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,23 +94,13 @@
       <workItem from="1695152235837" duration="118000" />
       <workItem from="1695152450021" duration="2862000" />
       <workItem from="1695164850070" duration="4498000" />
-      <workItem from="1695235364845" duration="49000" />
+      <workItem from="1695235364845" duration="520000" />
+      <workItem from="1695235920852" duration="6202000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tiendaRopa/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

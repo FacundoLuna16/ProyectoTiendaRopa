@@ -1,9 +1,12 @@
-package com.tiendaRopa.Ropa;
+package com.tiendaRopa.Infraestructure.entity;
+
+import com.tiendaRopa.Domain.Model.Producto;
 
 import javax.persistence.*;
 
 @Entity
-public class Ropa {
+@Table(name = "Producto")
+public class ProductoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -16,14 +19,39 @@ public class Ropa {
 
     @ManyToOne
     @JoinColumn(name = "categoria_id")
-    private CategoriaRopa categoria;
+    private CategoriaProductoEntity categoria;
 
     @ManyToOne
     @JoinColumn(name = "temporada_id")
-    private Temporada temporada;
+    private TemporadaEntity temporadaEntity;
+
+    public ProductoEntity(){}
+
+    public ProductoEntity(String nombre, String marca, String color, String talla, int precio, int cantidad, CategoriaProductoEntity categoria, TemporadaEntity temporadaEntity){
+        this.nombre = nombre;
+        this.marca = marca;
+        this.color = color;
+        this.talla = talla;
+        this.precio = precio;
+        this.cantidad = cantidad;
+        this.categoria = categoria;
+        this.temporadaEntity = temporadaEntity;
+    }
 
 
-
+    public Producto toProduct(){
+        return new Producto(
+                this.id,
+                this.nombre,
+                this.marca,
+                this.categoria.toCategoria(),
+                this.temporadaEntity.toTemporada(),
+                this.color,
+                this.talla,
+                this.precio,
+                this.cantidad
+        );
+    }
 
     public int getId() {
         return id;
@@ -53,12 +81,12 @@ public class Ropa {
         return cantidad;
     }
 
-    public CategoriaRopa getCategoria() {
+    public CategoriaProductoEntity getCategoria() {
         return categoria;
     }
 
-    public Temporada getTemporada() {
-        return temporada;
+    public TemporadaEntity getTemporada() {
+        return temporadaEntity;
     }
 
     public void setId(int id) {
@@ -89,11 +117,11 @@ public class Ropa {
         this.cantidad = cantidad;
     }
 
-    public void setCategoria(CategoriaRopa categoria) {
+    public void setCategoria(CategoriaProductoEntity categoria) {
         this.categoria = categoria;
     }
 
-    public void setTemporada(Temporada temporada) {
-        this.temporada = temporada;
+    public void setTemporada(TemporadaEntity temporadaEntity) {
+        this.temporadaEntity = temporadaEntity;
     }
 }
