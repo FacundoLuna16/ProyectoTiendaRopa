@@ -5,28 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae227496-d5ae-4b5a-aa75-21d80fedb701" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Model/CategoriaProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Model/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Model/Temporada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Service/DomainProductoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Service/ProductoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/CategoriaProductoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/ProductoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/TemporadaRepsitory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaCategoriaProductoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaProductoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaTemporada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/repository/JpaProductoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/configuration/BeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructura/RopaDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/CategoriaRopa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/entity/CategoriaProductoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/Ropa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/entity/ProductoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Ropa/Temporada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/entity/TemporadaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/ProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/ProductoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/repository/JpaProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/repository/JpaProductoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +45,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/fakku/Desktop/ProyTiendaRopa/TiendaRopa/TiendaRopa",
+    "last_opened_file_path": "C:/Users/fakku/OneDrive/Escritorio/ProyectoTiendaRopa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +80,7 @@
       <workItem from="1695164850070" duration="4498000" />
       <workItem from="1695235364845" duration="520000" />
       <workItem from="1695235920852" duration="6202000" />
+      <workItem from="1695378449267" duration="3086000" />
     </task>
     <servers />
   </component>
