@@ -1,13 +1,15 @@
 package com.tiendaRopa;
 
-import com.tiendaRopa.Domain.Model.Producto;
-import com.tiendaRopa.Infraestructure.entity.ProductoEntity;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
+@SpringBootApplication
+@EntityScan("com.tiendaRopa")
 public class Main {
     public static void main(String[] args) {
-        Producto producto = new Producto(1, "Remera", "Nike", null, null, "Rojo", "M", 1000, 10);
-        System.out.println(producto.ToString());
+        SpringApplication.run(Main.class, args);
     }
 }

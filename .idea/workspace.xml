@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae227496-d5ae-4b5a-aa75-21d80fedb701" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/configuration/BeanConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Controller/TemporadaControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Service/DomainTemporadaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Service/TemporadaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/repository/JpaTemporadaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Model/Temporada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/Model/Temporada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/ProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/ProductoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/TemporadaRepsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Domain/repository/TemporadaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaProductoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaProductoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaTemporada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/Dao/JpaTemporadaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/configuration/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/configuration/BeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/entity/TemporadaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/entity/TemporadaEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/repository/JpaProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Infraestructure/repository/JpaProductoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiendaRopa/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +49,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/fakku/OneDrive/Escritorio/ProyectoTiendaRopa",
+    "last_opened_file_path": "H:/Mi unidad/Tercero/BackendDeAplicaciones(k1)/Semana6/semana6-Spring-autos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +79,26 @@
       <recent name="com.tiendaRopa.Infraestructure.Dao" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="TiendaRopa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tiendaRopa.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tiendaRopa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,6 +114,10 @@
       <workItem from="1695235364845" duration="520000" />
       <workItem from="1695235920852" duration="6202000" />
       <workItem from="1695378449267" duration="3086000" />
+      <workItem from="1695513623153" duration="254000" />
+      <workItem from="1695513925233" duration="574000" />
+      <workItem from="1695514541496" duration="1064000" />
+      <workItem from="1695559709324" duration="5480000" />
     </task>
     <servers />
   </component>

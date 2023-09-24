@@ -4,7 +4,7 @@ import com.tiendaRopa.Domain.Model.Temporada;
 
 import java.util.List;
 
-public interface TemporadaRepsitory {
+public interface TemporadaRepository {
 
     List<Temporada> getAll();
 

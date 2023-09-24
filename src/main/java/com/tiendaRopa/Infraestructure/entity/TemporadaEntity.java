@@ -8,14 +8,21 @@ import javax.persistence.*;
 @Table(name = "Temporada")
 public class TemporadaEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private String id;
+
+    @Column(name = "NOMBRE")
     private String nombre;
 
     public TemporadaEntity(){}
 
-    public TemporadaEntity(String nombre){
+    public TemporadaEntity(String id, String nombre){
+        this.id = id;
         this.nombre = nombre;
+    }
+
+    public static TemporadaEntity from(Temporada temporada){
+        return new TemporadaEntity( temporada.getId(), temporada.getNombre()
+        );
     }
 
     public Temporada toTemporada(){
@@ -25,19 +32,5 @@ public class TemporadaEntity {
         );
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public int getId() {
-        return id;
-    }
 }
